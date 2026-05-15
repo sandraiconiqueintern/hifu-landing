@@ -1,5 +1,6 @@
 'use client'
 
+import Script from 'next/script'
 import { usePathname, useSearchParams } from 'next/navigation'
 import { useEffect } from 'react'
 import * as fpixel from '@/lib/fpixel'
@@ -14,16 +15,13 @@ export default function FacebookPixel() {
 
   return (
     <>
-      <script
-        id="fb-pixel"
+      <Script
+        id="fb-pixel-base"
         src="/fb-pixel.js"
-        async
-      />
-      <script
-        dangerouslySetInnerHTML={{
-          __html: `
-            fbq('init', '${fpixel.FB_PIXEL_ID}');
-          `,
+        strategy="afterInteractive"
+        onLoad={() => {
+          window.fbq('init', fpixel.FB_PIXEL_ID as string)
+          window.fbq('track', 'PageView')
         }}
       />
       <noscript>
