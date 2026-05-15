@@ -28,29 +28,13 @@ export default function BookingForm() {
     if (!validate()) return;
     setLoading(true);
     await new Promise((r) => setTimeout(r, 1000));
-    if (typeof window !== 'undefined' && (window as any).fbq) {
-      fpixel.event('Lead', {
-  content_name: 'HIFU Booking',
-  content_category: 'Beauty Treatment',
-})
-    }
+    fpixel.event('Lead', {
+      content_name: 'HIFU Booking',
+      content_category: 'Beauty Treatment',
+    });
     setSubmitted(true);
     setLoading(false);
   };
-
-  const inputStyle = (hasError: boolean) => ({
-    width: '100%',
-    padding: '15px 18px',
-    fontFamily: "'DM Sans', sans-serif",
-    fontSize: '14px',
-    fontWeight: 300,
-    color: 'var(--charcoal)',
-    backgroundColor: 'rgba(250,247,242,0.5)',
-    border: `1px solid ${hasError ? '#C4715A' : 'rgba(232, 197, 184, 0.6)'}`,
-    borderRadius: '2px',
-    outline: 'none',
-    transition: 'border-color 0.2s ease, background-color 0.2s ease',
-  });
 
   const labelStyle = {
     display: 'block',
@@ -62,6 +46,21 @@ export default function BookingForm() {
     color: 'rgba(250,247,242,0.6)',
     marginBottom: '8px',
   };
+
+  const inputStyle = (hasError: boolean) => ({
+    width: '100%',
+    padding: '15px 18px',
+    fontFamily: "'DM Sans', sans-serif",
+    fontSize: '14px',
+    fontWeight: 300,
+    // Fix: light text so placeholder and typed text are visible
+    color: 'rgba(250,247,242,0.9)',
+    backgroundColor: 'rgba(250,247,242,0.07)',
+    border: `1px solid ${hasError ? '#C4715A' : 'rgba(232, 197, 184, 0.4)'}`,
+    borderRadius: '2px',
+    outline: 'none',
+    transition: 'border-color 0.2s ease, background-color 0.2s ease',
+  });
 
   if (submitted) {
     return (
@@ -93,7 +92,7 @@ export default function BookingForm() {
         }}>Your Session is Booked</h2>
         <p style={{
           fontFamily: "'DM Sans', sans-serif",
-          fontSize: '14px',
+          fontSize: '15px',
           fontWeight: 300,
           lineHeight: 1.7,
           color: 'rgba(250,247,242,0.6)',
@@ -114,6 +113,7 @@ export default function BookingForm() {
         backdropFilter: 'blur(8px)',
       }}>
         <div style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
+
           {/* Name */}
           <div>
             <label style={labelStyle}>Full Name *</label>
@@ -123,10 +123,20 @@ export default function BookingForm() {
               onChange={(e) => setForm({ ...form, name: e.target.value })}
               placeholder="Enter your full name"
               style={inputStyle(!!errors.name)}
-              onFocus={e => { e.target.style.borderColor = 'var(--gold)'; e.target.style.backgroundColor = 'rgba(250,247,242,0.08)'; }}
-              onBlur={e => { e.target.style.borderColor = errors.name ? 'var(--rose)' : 'rgba(232, 197, 184, 0.6)'; e.target.style.backgroundColor = 'rgba(250,247,242,0.05)'; }}
+              onFocus={e => {
+                e.target.style.borderColor = 'var(--gold)';
+                e.target.style.backgroundColor = 'rgba(250,247,242,0.1)';
+              }}
+              onBlur={e => {
+                e.target.style.borderColor = errors.name ? '#C4715A' : 'rgba(232, 197, 184, 0.4)';
+                e.target.style.backgroundColor = 'rgba(250,247,242,0.07)';
+              }}
             />
-            {errors.name && <p style={{ fontFamily: "'DM Sans', sans-serif", fontSize: '11px', color: 'var(--blush)', marginTop: '6px', letterSpacing: '0.04em' }}>{errors.name}</p>}
+            {errors.name && (
+              <p style={{ fontFamily: "'DM Sans', sans-serif", fontSize: '11px', color: '#C4715A', marginTop: '6px', letterSpacing: '0.04em' }}>
+                {errors.name}
+              </p>
+            )}
           </div>
 
           {/* Email */}
@@ -138,10 +148,20 @@ export default function BookingForm() {
               onChange={(e) => setForm({ ...form, email: e.target.value })}
               placeholder="Enter your email address"
               style={inputStyle(!!errors.email)}
-              onFocus={e => { e.target.style.borderColor = 'var(--gold)'; e.target.style.backgroundColor = 'rgba(250,247,242,0.08)'; }}
-              onBlur={e => { e.target.style.borderColor = errors.email ? 'var(--rose)' : 'rgba(232, 197, 184, 0.6)'; e.target.style.backgroundColor = 'rgba(250,247,242,0.05)'; }}
+              onFocus={e => {
+                e.target.style.borderColor = 'var(--gold)';
+                e.target.style.backgroundColor = 'rgba(250,247,242,0.1)';
+              }}
+              onBlur={e => {
+                e.target.style.borderColor = errors.email ? '#C4715A' : 'rgba(232, 197, 184, 0.4)';
+                e.target.style.backgroundColor = 'rgba(250,247,242,0.07)';
+              }}
             />
-            {errors.email && <p style={{ fontFamily: "'DM Sans', sans-serif", fontSize: '11px', color: 'var(--blush)', marginTop: '6px', letterSpacing: '0.04em' }}>{errors.email}</p>}
+            {errors.email && (
+              <p style={{ fontFamily: "'DM Sans', sans-serif", fontSize: '11px', color: '#C4715A', marginTop: '6px', letterSpacing: '0.04em' }}>
+                {errors.email}
+              </p>
+            )}
           </div>
 
           {/* Phone */}
@@ -153,10 +173,20 @@ export default function BookingForm() {
               onChange={(e) => setForm({ ...form, phone: e.target.value })}
               placeholder="09XX XXX XXXX or +639XX XXX XXXX"
               style={inputStyle(!!errors.phone)}
-              onFocus={e => { e.target.style.borderColor = 'var(--gold)'; e.target.style.backgroundColor = 'rgba(250,247,242,0.08)'; }}
-              onBlur={e => { e.target.style.borderColor = errors.phone ? 'var(--rose)' : 'rgba(232, 197, 184, 0.6)'; e.target.style.backgroundColor = 'rgba(250,247,242,0.05)'; }}
+              onFocus={e => {
+                e.target.style.borderColor = 'var(--gold)';
+                e.target.style.backgroundColor = 'rgba(250,247,242,0.1)';
+              }}
+              onBlur={e => {
+                e.target.style.borderColor = errors.phone ? '#C4715A' : 'rgba(232, 197, 184, 0.4)';
+                e.target.style.backgroundColor = 'rgba(250,247,242,0.07)';
+              }}
             />
-            {errors.phone && <p style={{ fontFamily: "'DM Sans', sans-serif", fontSize: '11px', color: 'var(--blush)', marginTop: '6px', letterSpacing: '0.04em' }}>{errors.phone}</p>}
+            {errors.phone && (
+              <p style={{ fontFamily: "'DM Sans', sans-serif", fontSize: '11px', color: '#C4715A', marginTop: '6px', letterSpacing: '0.04em' }}>
+                {errors.phone}
+              </p>
+            )}
           </div>
 
           {/* Submit */}
@@ -180,8 +210,20 @@ export default function BookingForm() {
               marginTop: '8px',
               boxShadow: '0 8px 28px rgba(201,169,110,0.3)',
             }}
-            onMouseEnter={e => { if (!loading) { e.currentTarget.style.backgroundColor = '#d4b87e'; e.currentTarget.style.transform = 'translateY(-2px)'; e.currentTarget.style.boxShadow = '0 14px 36px rgba(201,169,110,0.45)'; } }}
-            onMouseLeave={e => { if (!loading) { e.currentTarget.style.backgroundColor = 'var(--gold)'; e.currentTarget.style.transform = 'translateY(0)'; e.currentTarget.style.boxShadow = '0 8px 28px rgba(201,169,110,0.3)'; } }}
+            onMouseEnter={e => {
+              if (!loading) {
+                e.currentTarget.style.backgroundColor = '#d4b87e';
+                e.currentTarget.style.transform = 'translateY(-2px)';
+                e.currentTarget.style.boxShadow = '0 14px 36px rgba(201,169,110,0.45)';
+              }
+            }}
+            onMouseLeave={e => {
+              if (!loading) {
+                e.currentTarget.style.backgroundColor = 'var(--gold)';
+                e.currentTarget.style.transform = 'translateY(0)';
+                e.currentTarget.style.boxShadow = '0 8px 28px rgba(201,169,110,0.3)';
+              }
+            }}
           >
             {loading ? 'Scheduling…' : 'Schedule Appointment'}
           </button>
@@ -201,8 +243,18 @@ export default function BookingForm() {
               </div>
             ))}
           </div>
+
         </div>
       </div>
+
+      {/* Placeholder color fix via global style injection */}
+      <style>{`
+        input::placeholder {
+          color: rgba(250, 247, 242, 0.35) !important;
+          font-family: 'DM Sans', sans-serif;
+          font-weight: 300;
+        }
+      `}</style>
     </div>
   );
 }

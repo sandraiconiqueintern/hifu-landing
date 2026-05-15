@@ -62,7 +62,7 @@ export default function Home() {
               </h2>
               <p style={{
                 fontFamily: "'DM Sans', sans-serif",
-                fontSize: '15px',
+                fontSize: '17px',
                 fontWeight: 300,
                 lineHeight: 1.8,
                 color: 'rgba(250,247,242,0.55)',
@@ -93,7 +93,7 @@ export default function Home() {
                     </div>
                     <span style={{
                       fontFamily: "'DM Sans', sans-serif",
-                      fontSize: '13px',
+                      fontSize: '15px',
                       fontWeight: 300,
                       color: 'rgba(250,247,242,0.65)',
                       letterSpacing: '0.02em',
@@ -104,7 +104,7 @@ export default function Home() {
 
               <p style={{
                 fontFamily: "'DM Sans', sans-serif",
-                fontSize: '11px',
+                fontSize: '13px',
                 fontWeight: 500,
                 letterSpacing: '0.14em',
                 textTransform: 'uppercase',
