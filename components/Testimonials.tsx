@@ -59,7 +59,7 @@ export default function Testimonials() {
               <div style={{ width: '28px', height: '1px', backgroundColor: 'var(--gold)' }} />
               <span style={{
                 fontFamily: "'DM Sans', sans-serif",
-                fontSize: '11px',
+                fontSize: '0.6875rem',
                 fontWeight: 500,
                 letterSpacing: '0.22em',
                 textTransform: 'uppercase',
@@ -69,7 +69,7 @@ export default function Testimonials() {
             </div>
             <h2 style={{
               fontFamily: "'Cormorant Garamond', serif",
-              fontSize: 'clamp(36px, 5vw, 64px)',
+              fontSize: 'clamp(2.25rem, 5vw, 4rem)',
               fontWeight: 300,
               lineHeight: 1.08,
               color: 'var(--charcoal)',
@@ -80,7 +80,7 @@ export default function Testimonials() {
             </h2>
             <p style={{
               fontFamily: "'DM Sans', sans-serif",
-              fontSize: '15px',
+              fontSize: '1.0625rem',
               fontWeight: 300,
               color: 'var(--warm-gray)',
               maxWidth: '420px',
@@ -91,7 +91,7 @@ export default function Testimonials() {
             </p>
           </div>
 
-          {/* Story Cards — image top, text panel below */}
+          {/* Story Cards */}
           <div className="stories-grid">
             {clientStories.map((story) => (
               <div
@@ -115,7 +115,7 @@ export default function Testimonials() {
                   (e.currentTarget as HTMLDivElement).style.boxShadow = '0 8px 32px rgba(28,24,20,0.12)';
                 }}
               >
-                {/* Image — top 65% */}
+                {/* Image */}
                 <div style={{ position: 'relative', flexShrink: 0, overflow: 'hidden', height: '65%' }}>
                   <img
                     src={story.image}
@@ -130,7 +130,6 @@ export default function Testimonials() {
                       transition: 'transform 0.6s ease',
                     }}
                   />
-                  {/* Thin bottom gradient to bleed into the panel */}
                   <div style={{
                     position: 'absolute',
                     bottom: 0, left: 0, right: 0,
@@ -139,7 +138,7 @@ export default function Testimonials() {
                   }} />
                 </div>
 
-                {/* Text panel — bottom 35% */}
+                {/* Text panel */}
                 <div style={{
                   flex: 1,
                   padding: 'clamp(16px, 2vw, 24px) clamp(16px, 2vw, 24px) clamp(20px, 2.5vw, 28px)',
@@ -150,22 +149,22 @@ export default function Testimonials() {
                 }}>
                   <p style={{
                     fontFamily: "'Cormorant Garamond', serif",
-                    fontSize: 'clamp(14px, 1.2vw, 16px)',
+                    fontSize: 'clamp(0.9375rem, 1.2vw, 1.0625rem)',
                     fontStyle: 'italic',
                     fontWeight: 400,
                     lineHeight: 1.65,
-                    color: 'rgba(250,247,242,0.82)',
+                    color: 'rgba(250,247,242,0.88)',
                   }}>"{story.quote}"</p>
 
                   <div>
                     <div style={{ display: 'flex', gap: '3px', marginBottom: '6px' }}>
                       {Array.from({ length: 5 }).map((_, i) => (
-                        <span key={i} style={{ color: 'var(--gold)', fontSize: '11px' }}>★</span>
+                        <span key={i} style={{ color: 'var(--gold)', fontSize: '0.75rem' }}>★</span>
                       ))}
                     </div>
                     <p style={{
                       fontFamily: "'DM Sans', sans-serif",
-                      fontSize: '12px',
+                      fontSize: '0.8125rem',
                       fontWeight: 500,
                       color: 'var(--blush)',
                       letterSpacing: '0.08em',
@@ -212,12 +211,12 @@ export default function Testimonials() {
                 <div>
                   <div style={{ display: 'flex', gap: '3px', marginBottom: '16px' }}>
                     {Array.from({ length: t.rating }).map((_, i) => (
-                      <span key={i} style={{ color: 'var(--gold)', fontSize: '13px' }}>★</span>
+                      <span key={i} style={{ color: 'var(--gold)', fontSize: '0.9375rem' }}>★</span>
                     ))}
                   </div>
                   <p style={{
                     fontFamily: "'Cormorant Garamond', serif",
-                    fontSize: 'clamp(15px, 1.5vw, 18px)',
+                    fontSize: 'clamp(1.0625rem, 1.5vw, 1.1875rem)',
                     fontWeight: 400,
                     fontStyle: 'italic',
                     lineHeight: 1.65,
@@ -238,7 +237,7 @@ export default function Testimonials() {
                   }}>
                     <span style={{
                       fontFamily: "'Cormorant Garamond', serif",
-                      fontSize: '13px',
+                      fontSize: '0.875rem',
                       fontWeight: 500,
                       color: 'var(--rose)',
                     }}>{t.name.split(' ').map((n: string) => n[0]).join('')}</span>
@@ -246,14 +245,14 @@ export default function Testimonials() {
                   <div>
                     <p style={{
                       fontFamily: "'DM Sans', sans-serif",
-                      fontSize: '13px',
+                      fontSize: '0.9375rem',
                       fontWeight: 500,
                       color: 'var(--charcoal)',
                       marginBottom: '2px',
                     }}>{t.name}</p>
                     <p style={{
                       fontFamily: "'DM Sans', sans-serif",
-                      fontSize: '11px',
+                      fontSize: '0.8125rem',
                       color: 'var(--warm-gray-light)',
                       letterSpacing: '0.05em',
                     }}>{t.location}</p>
@@ -267,7 +266,7 @@ export default function Testimonials() {
           <div style={{ textAlign: 'center', marginTop: 'clamp(40px, 5vw, 64px)' }}>
             <Link href="#booking" style={{
               fontFamily: "'DM Sans', sans-serif",
-              fontSize: '12px',
+              fontSize: '0.75rem',
               fontWeight: 600,
               letterSpacing: '0.18em',
               textTransform: 'uppercase',

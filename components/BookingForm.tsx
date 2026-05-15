@@ -39,7 +39,7 @@ export default function BookingForm() {
   const labelStyle = {
     display: 'block',
     fontFamily: "'DM Sans', sans-serif",
-    fontSize: '10px',
+    fontSize: '0.625rem',
     fontWeight: 500,
     letterSpacing: '0.18em',
     textTransform: 'uppercase' as const,
@@ -51,7 +51,7 @@ export default function BookingForm() {
     width: '100%',
     padding: '15px 18px',
     fontFamily: "'DM Sans', sans-serif",
-    fontSize: '14px',
+    fontSize: '0.875rem',
     fontWeight: 300,
     // Fix: light text so placeholder and typed text are visible
     color: 'rgba(250,247,242,0.9)',
@@ -81,18 +81,18 @@ export default function BookingForm() {
           justifyContent: 'center',
           margin: '0 auto 28px',
         }}>
-          <span style={{ fontSize: '28px', color: 'var(--gold)' }}>✓</span>
+          <span style={{ fontSize: '1.75rem', color: 'var(--gold)' }}>✓</span>
         </div>
         <h2 style={{
           fontFamily: "'Cormorant Garamond', serif",
-          fontSize: 'clamp(28px, 4vw, 40px)',
+          fontSize: 'clamp(1.75rem, 4vw, 2.5rem)',
           fontWeight: 400,
           color: 'rgba(250,247,242,0.9)',
           marginBottom: '16px',
         }}>Your Session is Booked</h2>
         <p style={{
           fontFamily: "'DM Sans', sans-serif",
-          fontSize: '15px',
+          fontSize: '0.9375rem',
           fontWeight: 300,
           lineHeight: 1.7,
           color: 'rgba(250,247,242,0.6)',
@@ -133,7 +133,7 @@ export default function BookingForm() {
               }}
             />
             {errors.name && (
-              <p style={{ fontFamily: "'DM Sans', sans-serif", fontSize: '11px', color: '#C4715A', marginTop: '6px', letterSpacing: '0.04em' }}>
+              <p style={{ fontFamily: "'DM Sans', sans-serif", fontSize: '0.6875rem', color: '#C4715A', marginTop: '6px', letterSpacing: '0.04em' }}>
                 {errors.name}
               </p>
             )}
@@ -158,7 +158,7 @@ export default function BookingForm() {
               }}
             />
             {errors.email && (
-              <p style={{ fontFamily: "'DM Sans', sans-serif", fontSize: '11px', color: '#C4715A', marginTop: '6px', letterSpacing: '0.04em' }}>
+              <p style={{ fontFamily: "'DM Sans', sans-serif", fontSize: '0.6875rem', color: '#C4715A', marginTop: '6px', letterSpacing: '0.04em' }}>
                 {errors.email}
               </p>
             )}
@@ -183,7 +183,7 @@ export default function BookingForm() {
               }}
             />
             {errors.phone && (
-              <p style={{ fontFamily: "'DM Sans', sans-serif", fontSize: '11px', color: '#C4715A', marginTop: '6px', letterSpacing: '0.04em' }}>
+              <p style={{ fontFamily: "'DM Sans', sans-serif", fontSize: '0.6875rem', color: '#C4715A', marginTop: '6px', letterSpacing: '0.04em' }}>
                 {errors.phone}
               </p>
             )}
@@ -197,7 +197,7 @@ export default function BookingForm() {
               width: '100%',
               padding: '18px 24px',
               fontFamily: "'DM Sans', sans-serif",
-              fontSize: '12px',
+              fontSize: '0.75rem',
               fontWeight: 600,
               letterSpacing: '0.18em',
               textTransform: 'uppercase',
@@ -235,7 +235,7 @@ export default function BookingForm() {
                 <div style={{ width: '4px', height: '4px', borderRadius: '50%', backgroundColor: 'var(--gold)' }} />
                 <span style={{
                   fontFamily: "'DM Sans', sans-serif",
-                  fontSize: '10px',
+                  fontSize: '0.625rem',
                   letterSpacing: '0.12em',
                   textTransform: 'uppercase',
                   color: 'rgba(250,247,242,0.4)',

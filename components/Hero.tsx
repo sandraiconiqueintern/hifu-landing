@@ -49,7 +49,7 @@ export default function Hero() {
             <div style={{ width: '36px', height: '1px', backgroundColor: 'var(--gold)' }} />
             <span style={{
               fontFamily: "'DM Sans', sans-serif",
-              fontSize: '11px',
+              fontSize: '0.6875rem',
               fontWeight: 500,
               letterSpacing: '0.28em',
               textTransform: 'uppercase',
@@ -60,7 +60,7 @@ export default function Hero() {
           {/* Headline */}
           <h1 className="animate-fade-up delay-2" style={{
             fontFamily: "'Cormorant Garamond', serif",
-            fontSize: 'clamp(48px, 7vw, 88px)',
+            fontSize: 'clamp(3rem, 7vw, 5.5rem)',
             fontWeight: 300,
             lineHeight: 1.04,
             color: '#FAF7F2',
@@ -70,7 +70,7 @@ export default function Hero() {
           </h1>
           <h1 className="animate-fade-up delay-2" style={{
             fontFamily: "'Cormorant Garamond', serif",
-            fontSize: 'clamp(48px, 7vw, 88px)',
+            fontSize: 'clamp(3rem, 7vw, 5.5rem)',
             fontWeight: 600,
             fontStyle: 'italic',
             lineHeight: 1.04,
@@ -82,8 +82,8 @@ export default function Hero() {
 
           <p className="animate-fade-up delay-3" style={{
             fontFamily: "'DM Sans', sans-serif",
-            fontSize: 'clamp(15px, 1.8vw, 18px)',
-            fontWeight: 300,
+            fontSize: 'clamp(1rem, 1.8vw, 1.125rem)',
+            fontWeight: 400,
             lineHeight: 1.8,
             color: 'rgba(250,247,242,0.80)',
             maxWidth: '520px',
@@ -116,7 +116,7 @@ export default function Hero() {
                 }} />
                 <span style={{
                   fontFamily: "'DM Sans', sans-serif",
-                  fontSize: '13px',
+                  fontSize: '0.8125rem',
                   fontWeight: 400,
                   letterSpacing: '0.06em',
                   color: 'rgba(250,247,242,0.85)',
@@ -129,7 +129,7 @@ export default function Hero() {
           <div className="animate-fade-up delay-4" style={{ display: 'flex', flexWrap: 'wrap', gap: '16px' }}>
             <Link href="#booking" style={{
               fontFamily: "'DM Sans', sans-serif",
-              fontSize: '12px',
+              fontSize: '0.75rem',
               fontWeight: 600,
               letterSpacing: '0.18em',
               textTransform: 'uppercase',
@@ -149,7 +149,7 @@ export default function Hero() {
             </Link>
             <Link href="#how-it-works" style={{
               fontFamily: "'DM Sans', sans-serif",
-              fontSize: '12px',
+              fontSize: '0.75rem',
               fontWeight: 500,
               letterSpacing: '0.14em',
               textTransform: 'uppercase',

@@ -50,7 +50,7 @@ export default function HowItWorks() {
             <div style={{ width: '28px', height: '1px', backgroundColor: 'var(--gold)' }} />
             <span style={{
               fontFamily: "'DM Sans', sans-serif",
-              fontSize: '11px',
+              fontSize: '1rem',
               fontWeight: 500,
               letterSpacing: '0.22em',
               textTransform: 'uppercase',
@@ -60,7 +60,7 @@ export default function HowItWorks() {
           </div>
           <h2 style={{
             fontFamily: "'Cormorant Garamond', serif",
-            fontSize: 'clamp(36px, 5vw, 64px)',
+            fontSize: 'clamp(2.25rem, 5vw, 4rem)',
             fontWeight: 300,
             lineHeight: 1.08,
             color: 'var(--charcoal)',
@@ -70,7 +70,7 @@ export default function HowItWorks() {
           </h2>
           <p style={{
             fontFamily: "'DM Sans', sans-serif",
-            fontSize: '15px',
+            fontSize: '1.25rem',
             fontWeight: 300,
             color: 'var(--warm-gray)',
             maxWidth: '440px',
@@ -107,7 +107,7 @@ export default function HowItWorks() {
               >
                 <div style={{
                   fontFamily: "'Cormorant Garamond', serif",
-                  fontSize: 'clamp(52px, 6vw, 72px)',
+                  fontSize: 'clamp(3.25rem, 6vw, 4.5rem)',
                   fontWeight: 300,
                   color: 'var(--blush)',
                   lineHeight: 1,
@@ -116,14 +116,14 @@ export default function HowItWorks() {
                 }}>{step.number}</div>
                 <h3 style={{
                   fontFamily: "'Cormorant Garamond', serif",
-                  fontSize: 'clamp(18px, 2vw, 24px)',
+                  fontSize: 'clamp(1.125rem, 2vw, 1.5rem)',
                   fontWeight: 500,
                   color: 'var(--charcoal)',
                   marginBottom: '12px',
                 }}>{step.title}</h3>
                 <p style={{
                   fontFamily: "'DM Sans', sans-serif",
-                  fontSize: '13px',
+                  fontSize: '0.8125rem',
                   fontWeight: 300,
                   lineHeight: 1.75,
                   color: 'var(--warm-gray)',
@@ -137,7 +137,7 @@ export default function HowItWorks() {
         <div style={{ textAlign: 'center', marginTop: 'clamp(40px, 5vw, 64px)' }}>
           <Link href="#booking" style={{
             fontFamily: "'DM Sans', sans-serif",
-            fontSize: '12px',
+            fontSize: '0.75rem',
             fontWeight: 600,
             letterSpacing: '0.18em',
             textTransform: 'uppercase',

@@ -47,7 +47,7 @@ export default function Benefits() {
             <div style={{ width: '28px', height: '1px', backgroundColor: 'var(--gold)' }} />
             <span style={{
               fontFamily: "'DM Sans', sans-serif",
-              fontSize: '11px',
+              fontSize: '0.6875rem',
               fontWeight: 500,
               letterSpacing: '0.22em',
               textTransform: 'uppercase',
@@ -57,7 +57,7 @@ export default function Benefits() {
           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-end', width: '100%', flexWrap: 'wrap', gap: '24px' }}>
             <h2 style={{
               fontFamily: "'Cormorant Garamond', serif",
-              fontSize: 'clamp(36px, 5vw, 64px)',
+              fontSize: 'clamp(2.25rem, 5vw, 4rem)',
               fontWeight: 300,
               lineHeight: 1.08,
               color: 'var(--charcoal)',
@@ -67,7 +67,7 @@ export default function Benefits() {
             </h2>
             <Link href="#booking" style={{
               fontFamily: "'DM Sans', sans-serif",
-              fontSize: '11px',
+              fontSize: '0.6875rem',
               fontWeight: 600,
               letterSpacing: '0.18em',
               textTransform: 'uppercase',
@@ -116,14 +116,14 @@ export default function Benefits() {
             >
               <div style={{
                 fontFamily: "'DM Sans', sans-serif",
-                fontSize: '22px',
+                fontSize: '1.375rem',
                 color: 'var(--rose)',
                 marginBottom: '20px',
                 lineHeight: 1,
               }}>{benefit.icon}</div>
               <h3 style={{
                 fontFamily: "'Cormorant Garamond', serif",
-                fontSize: '22px',
+                fontSize: '1.375rem',
                 fontWeight: 500,
                 color: 'var(--charcoal)',
                 marginBottom: '12px',
@@ -131,7 +131,7 @@ export default function Benefits() {
               }}>{benefit.title}</h3>
               <p style={{
                 fontFamily: "'DM Sans', sans-serif",
-                fontSize: '14px',
+                fontSize: '0.875rem',
                 fontWeight: 300,
                 lineHeight: 1.75,
                 color: 'var(--warm-gray)',

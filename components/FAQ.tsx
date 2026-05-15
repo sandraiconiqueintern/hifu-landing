@@ -44,7 +44,7 @@ export default function FAQ() {
             <div style={{ width: '28px', height: '1px', backgroundColor: 'var(--gold)' }} />
             <span style={{
               fontFamily: "'DM Sans', sans-serif",
-              fontSize: '11px',
+              fontSize: '0.6875rem',
               fontWeight: 500,
               letterSpacing: '0.22em',
               textTransform: 'uppercase',
@@ -54,7 +54,7 @@ export default function FAQ() {
           </div>
           <h2 style={{
             fontFamily: "'Cormorant Garamond', serif",
-            fontSize: 'clamp(36px, 5vw, 60px)',
+            fontSize: 'clamp(2.25rem, 5vw, 3.75rem)',
             fontWeight: 300,
             lineHeight: 1.1,
             color: 'var(--charcoal)',
@@ -64,7 +64,7 @@ export default function FAQ() {
           </h2>
           <p style={{
             fontFamily: "'DM Sans', sans-serif",
-            fontSize: '15px',
+            fontSize: '0.9375rem',
             fontWeight: 300,
             color: 'var(--warm-gray)',
           }}>Everything you need to know before your first HIFU session.</p>
@@ -98,7 +98,7 @@ export default function FAQ() {
               >
                 <span style={{
                   fontFamily: "'Cormorant Garamond', serif",
-                  fontSize: 'clamp(17px, 2.2vw, 21px)',
+                  fontSize: 'clamp(1.0625rem, 2.2vw, 1.3125rem)',
                   fontWeight: openIndex === index ? 500 : 400,
                   color: openIndex === index ? 'var(--rose)' : 'var(--charcoal)',
                   lineHeight: 1.3,
@@ -108,7 +108,7 @@ export default function FAQ() {
                 </span>
                 <span style={{
                   color: 'var(--rose)',
-                  fontSize: '20px',
+                  fontSize: '1.25rem',
                   flexShrink: 0,
                   width: '24px',
                   height: '24px',
@@ -127,7 +127,7 @@ export default function FAQ() {
               }}>
                 <p style={{
                   fontFamily: "'DM Sans', sans-serif",
-                  fontSize: '14px',
+                  fontSize: '0.875rem',
                   fontWeight: 300,
                   lineHeight: 1.8,
                   color: 'var(--warm-gray)',

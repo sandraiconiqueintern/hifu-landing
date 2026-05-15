@@ -34,14 +34,14 @@ export default function Navbar() {
             <div style={{ display: 'flex', flexDirection: 'column', lineHeight: 1 }}>
               <span style={{
                 fontFamily: "'Cormorant Garamond', serif",
-                fontSize: '22px',
+                fontSize: '1.375rem',
                 fontWeight: 500,
                 letterSpacing: '0.18em',
                 color: 'var(--blush)',
               }}>ICONIQUE</span>
               <span style={{
                 fontFamily: "'DM Sans', sans-serif",
-                fontSize: '9px',
+                fontSize: '0.5625rem',
                 letterSpacing: '0.25em',
                 color: 'rgba(232,197,184,0.5)',
                 textTransform: 'uppercase',
@@ -58,7 +58,7 @@ export default function Navbar() {
                 href={href}
                 style={{
                   fontFamily: "'DM Sans', sans-serif",
-                  fontSize: '13px',
+                  fontSize: '0.8125rem',
                   fontWeight: 400,
                   letterSpacing: '0.06em',
                   color: 'rgba(250,247,242,0.75)',
@@ -75,7 +75,7 @@ export default function Navbar() {
               href="#booking"
               style={{
                 fontFamily: "'DM Sans', sans-serif",
-                fontSize: '11px',
+                fontSize: '0.6875rem',
                 fontWeight: 600,
                 letterSpacing: '0.16em',
                 textTransform: 'uppercase',
@@ -133,7 +133,7 @@ export default function Navbar() {
                 onClick={() => setMenuOpen(false)}
                 style={{
                   fontFamily: "'DM Sans', sans-serif",
-                  fontSize: '14px',
+                  fontSize: '0.875rem',
                   color: 'rgba(250,247,242,0.75)',
                   textDecoration: 'none',
                   padding: '14px 4px',
@@ -152,7 +152,7 @@ export default function Navbar() {
                 marginTop: '20px',
                 textAlign: 'center',
                 fontFamily: "'DM Sans', sans-serif",
-                fontSize: '12px',
+                fontSize: '0.75rem',
                 fontWeight: 600,
                 letterSpacing: '0.16em',
                 textTransform: 'uppercase',

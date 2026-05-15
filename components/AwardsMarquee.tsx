@@ -27,7 +27,7 @@ export default function AwardsMarquee() {
           <div style={{ width: '28px', height: '1px', backgroundColor: 'var(--gold)' }} />
           <span style={{
             fontFamily: "'DM Sans', sans-serif",
-            fontSize: '11px',
+            fontSize: '0.6875rem',
             fontWeight: 500,
             letterSpacing: '0.22em',
             textTransform: 'uppercase',
@@ -37,7 +37,7 @@ export default function AwardsMarquee() {
         </div>
         <h2 style={{
           fontFamily: "'Cormorant Garamond', serif",
-          fontSize: 'clamp(32px, 4.5vw, 56px)',
+          fontSize: 'clamp(2rem, 4.5vw, 3.5rem)',
           fontWeight: 300,
           lineHeight: 1.1,
           color: 'var(--blush)',
@@ -107,7 +107,7 @@ export default function AwardsMarquee() {
       <div style={{ textAlign: 'center', marginTop: 'clamp(40px, 5vw, 60px)', padding: '0 48px' }}>
         <p style={{
           fontFamily: "'Cormorant Garamond', serif",
-          fontSize: 'clamp(18px, 2.5vw, 26px)',
+          fontSize: 'clamp(1.125rem, 2.5vw, 1.625rem)',
           fontStyle: 'italic',
           fontWeight: 300,
           color: 'rgba(250,247,242,0.6)',
@@ -116,14 +116,14 @@ export default function AwardsMarquee() {
         <div style={{ marginBottom: '28px' }}>
           <span style={{
             fontFamily: "'DM Sans', sans-serif",
-            fontSize: '14px',
+            fontSize: '0.875rem',
             color: 'rgba(250,247,242,0.4)',
             textDecoration: 'line-through',
             letterSpacing: '0.05em',
           }}>₱15,000</span>
           <span style={{
             fontFamily: "'Cormorant Garamond', serif",
-            fontSize: 'clamp(28px, 4vw, 44px)',
+            fontSize: 'clamp(1.75rem, 4vw, 2.75rem)',
             fontWeight: 600,
             color: 'var(--gold)',
             letterSpacing: '-0.01em',
@@ -131,7 +131,7 @@ export default function AwardsMarquee() {
           }}>ONLY ₱1,495</span>
           <span style={{
             fontFamily: "'DM Sans', sans-serif",
-            fontSize: '11px',
+            fontSize: '0.6875rem',
             fontWeight: 500,
             letterSpacing: '0.14em',
             textTransform: 'uppercase',
@@ -142,7 +142,7 @@ export default function AwardsMarquee() {
         </div>
         <Link href="#booking" style={{
           fontFamily: "'DM Sans', sans-serif",
-          fontSize: '12px',
+          fontSize: '0.75rem',
           fontWeight: 600,
           letterSpacing: '0.18em',
           textTransform: 'uppercase',
@@ -162,7 +162,7 @@ export default function AwardsMarquee() {
         </Link>
         <p style={{
           fontFamily: "'DM Sans', sans-serif",
-          fontSize: '11px',
+          fontSize: '0.6875rem',
           fontWeight: 500,
           color: 'rgba(250,247,242,0.3)',
           marginTop: '16px',
