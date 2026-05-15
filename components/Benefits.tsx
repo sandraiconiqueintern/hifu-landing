@@ -74,7 +74,7 @@ export default function Benefits() {
               color: 'white',
               backgroundColor: 'var(--rose)',
               padding: '14px 32px',
-              borderRadius: '2px',
+              borderRadius: '20px',
               textDecoration: 'none',
               transition: 'all 0.25s ease',
               flexShrink: 0,

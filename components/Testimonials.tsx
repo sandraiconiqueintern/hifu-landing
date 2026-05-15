@@ -274,7 +274,7 @@ export default function Testimonials() {
               color: 'white',
               backgroundColor: 'var(--rose)',
               padding: '18px 52px',
-              borderRadius: '2px',
+              borderRadius: '20px',
               textDecoration: 'none',
               transition: 'all 0.25s ease',
               display: 'inline-block',
