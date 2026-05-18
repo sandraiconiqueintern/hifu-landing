@@ -1,12 +1,14 @@
-import Navbar from '@/components/Navbar';
-import Hero from '@/components/Hero';
-import Benefits from '@/components/Benefits';
-import HowItWorks from '@/components/HowItWorks';
-import Testimonials from '@/components/Testimonials';
-import AwardsMarquee from '@/components/AwardsMarquee';
-import FAQ from '@/components/FAQ';
-import BookingForm from '@/components/BookingForm';
-import Footer from '@/components/Footer';
+'use client'
+
+import Navbar from '@/components/Navbar'
+import Hero from '@/components/Hero'
+import Benefits from '@/components/Benefits'
+import HowItWorks from '@/components/HowItWorks'
+import Testimonials from '@/components/Testimonials'
+import AwardsMarquee from '@/components/AwardsMarquee'
+import FAQ from '@/components/FAQ'
+import BookingForm from '@/components/BookingForm'
+import Footer from '@/components/Footer'
 
 export default function Home() {
   return (
@@ -26,7 +28,6 @@ export default function Home() {
         position: 'relative',
         overflow: 'hidden',
       }}>
-        {/* Background texture */}
         <div style={{
           position: 'absolute',
           inset: 0,
@@ -36,13 +37,12 @@ export default function Home() {
 
         <div style={{ maxWidth: '1400px', margin: '0 auto', position: 'relative', zIndex: 1 }}>
           <div className="booking-grid">
-            {/* Left: Copy */}
             <div style={{ paddingRight: 'clamp(0px, 4vw, 60px)' }}>
               <div style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '20px' }}>
                 <div style={{ width: '28px', height: '1px', backgroundColor: 'var(--gold)' }} />
                 <span style={{
                   fontFamily: "'DM Sans', sans-serif",
-                  fontSize: '11px',
+                  fontSize: '0.6875rem',
                   fontWeight: 500,
                   letterSpacing: '0.22em',
                   textTransform: 'uppercase',
@@ -51,7 +51,7 @@ export default function Home() {
               </div>
               <h2 style={{
                 fontFamily: "'Cormorant Garamond', serif",
-                fontSize: 'clamp(36px, 4.5vw, 60px)',
+                fontSize: 'clamp(2.25rem, 4.5vw, 3.75rem)',
                 fontWeight: 300,
                 lineHeight: 1.08,
                 color: 'rgba(250,247,242,0.9)',
@@ -62,7 +62,7 @@ export default function Home() {
               </h2>
               <p style={{
                 fontFamily: "'DM Sans', sans-serif",
-                fontSize: '17px',
+                fontSize: '1.0625rem',
                 fontWeight: 300,
                 lineHeight: 1.8,
                 color: 'rgba(250,247,242,0.55)',
@@ -72,7 +72,6 @@ export default function Home() {
                 No payment required. No commitment. Just a conversation about what your skin needs — and a plan to get you there.
               </p>
 
-              {/* Trust items */}
               <div style={{ display: 'flex', flexDirection: 'column', gap: '16px', marginBottom: '32px' }}>
                 {[
                   'Clinically-proven ultrasound lifting',
@@ -89,11 +88,11 @@ export default function Home() {
                       display: 'flex', alignItems: 'center', justifyContent: 'center',
                       flexShrink: 0,
                     }}>
-                      <span style={{ fontSize: '9px', color: 'var(--gold)' }}>✓</span>
+                      <span style={{ fontSize: '0.5625rem', color: 'var(--gold)' }}>✓</span>
                     </div>
                     <span style={{
                       fontFamily: "'DM Sans', sans-serif",
-                      fontSize: '15px',
+                      fontSize: '0.9375rem',
                       fontWeight: 300,
                       color: 'rgba(250,247,242,0.65)',
                       letterSpacing: '0.02em',
@@ -104,7 +103,7 @@ export default function Home() {
 
               <p style={{
                 fontFamily: "'DM Sans', sans-serif",
-                fontSize: '13px',
+                fontSize: '0.8125rem',
                 fontWeight: 500,
                 letterSpacing: '0.14em',
                 textTransform: 'uppercase',
@@ -112,7 +111,6 @@ export default function Home() {
               }}>Appointments are limited — secure your spot today</p>
             </div>
 
-            {/* Right: Form */}
             <div>
               <BookingForm />
             </div>
@@ -134,5 +132,5 @@ export default function Home() {
 
       <Footer />
     </main>
-  );
+  )
 }

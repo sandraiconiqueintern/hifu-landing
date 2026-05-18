@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import * as fpixel from '@/lib/fpixel'
+import { submitForm } from '@/lib/gtag'
 
 interface FormData {
   name: string;
@@ -29,9 +30,11 @@ export default function BookingForm() {
     setLoading(true);
     await new Promise((r) => setTimeout(r, 1000));
     fpixel.event('Lead', {
+      
       content_name: 'HIFU Booking',
       content_category: 'Beauty Treatment',
     });
+    submitForm('HIFU Booking Form')
     setSubmitted(true);
     setLoading(false);
   };
